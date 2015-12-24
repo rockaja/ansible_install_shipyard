@@ -20,7 +20,7 @@
       shell: usermod -aG docker ${USER}
 
     - name: Install Shipyard
-      shell: curl -s https://shipyard-project.com/deploy | PORT:9000 bash -s
+      shell: curl -s https://shipyard-project.com/deploy | PORT=9000 bash -s
 
     handlers:
      - name: restart docker
