@@ -21,9 +21,6 @@
 
     - name: Install Shipyard
       shell: curl -s https://shipyard-project.com/deploy | PORT=9000 bash -s
-      
-    - name: Install Jenkins  
-      shell: docker run -p 8084:8084 -p 5000:5000 -v /home/ubuntu:/var/jenkins_home jenkins
 
     handlers:
      - name: restart docker
